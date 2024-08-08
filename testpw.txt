@@ -1,0 +1,34 @@
+<html><head>
+    <title>How websites work</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="html-code-box">
+        <div id="html-bar">
+            <span id="html-url">https://vulnerable-site.com</span>
+        </div>
+        <div class="theme" id="html-code">
+            <div class="logo-pos"><img src="img/logo_white.png"></div>
+            <p id="login-msg">Incorrect credentials. <i class="hint" onclick="viewSourceCode()">Try looking at the source code</i> or pressing CTRL+U at the same time.</p>
+            <form method="post" id="form" autocomplete="off">
+                <div class="form-field">
+                    <input class="input-text" type="text" name="username" placeholder="Username..">
+                </div>
+                <div class="form-field">
+                    <input class="input-text" type="password" name="password" placeholder="Password..">
+                </div>
+                <button onclick="login()" type="button" class="login">Login</button>
+                <!--
+                    TODO: Remove test credentials!
+                        Username: admin
+                        Password: testpasswd
+                -->
+            </form>
+            <div class="footer">Copyright Â© Vulnerable Website</div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+
+
+</body></html>
